@@ -30,3 +30,8 @@ def cast_to_list(int_sequence: Union[Sequence[Numerics], ArrayLike]) -> list[Num
     This is a workaround for too strict type annotation of Qulacs
     """
     return cast(list[Numerics], int_sequence)
+
+#helper
+
+def helper_function():
+    print("helper function from quri_parts/circuit")
