@@ -32,9 +32,6 @@ from quri_parts.circuit.gate_names import (
 )
 
 from .. import cast_to_list
-#from .compiled_circuit import compile_circuit, compile_parametric_circuit
-#TODO
-#from .qulacs_circuit_converter import circuit_from_qulacs
 
 def scaluq_circuit_helper_function():
     print("helper function from scaluq/circuit")
