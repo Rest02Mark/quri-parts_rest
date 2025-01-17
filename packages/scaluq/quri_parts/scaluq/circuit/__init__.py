@@ -229,11 +229,11 @@ def convert_gate_f32(
             assert False, "Unreachable"
     elif is_two_qubit_gate_name(gate.name):
         return _two_qubit_gate_scaluq_f32[gate.name](
-            *gate.target_indices, *gate.target_indices
+            *gate.control_indices, *gate.target_indices
         )
     elif is_three_qubit_gate_name(gate.name):
         return _three_qubit_gate_scaluq_f32[gate.name](
-            *gate.target_indices, *gate.target_indices, *gate.target_indices
+            *gate.control_indices,*gate.target_indices
         )
     elif is_multi_qubit_gate_name(gate.name):
         target_indices = cast_to_list(gate.target_indices)
